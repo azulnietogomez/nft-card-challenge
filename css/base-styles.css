@@ -1,0 +1,20 @@
+:root {
+    /*Primary Colors*/
+    --soft-blue: hsl(215,51%,70%);
+    --cyan: hsl(178,100%,50%);
+    /*Neutral Colors*/
+    --dark-blue--main-bg: hsl(217, 54%, 11%);
+    --dark-blue--card-bg: hsl(217, 54% ,11%); 
+    --dark-blue--line: hsl(215, 32%, 27%);
+    --just-white: hsl(0, 0%, 100%);
+
+    /*Fonts*/
+    --outfit: 'Outfit', sans-serif;
+
+    /*Font sizes*/
+    --body: 1.8rem;
+
+    /*Widths*/
+    --mobile: 375px;
+    --desktop: 1440px;    
+}
