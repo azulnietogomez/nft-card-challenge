@@ -36,5 +36,8 @@ body {
     font-family: var(--outfit);
 }
 
+a {
+    text-decoration: none;
+}
 /*Normalize CSS*/
 

@@ -168,3 +168,23 @@ main {
 .creator-info a:hover {
     color: var(--cyan);
 }
+
+.attribution {
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--just-white);
+}
+
+.attribution span a {
+    color: var(--cyan);
+    transition: ease-in-out 1s;
+}
+
+.attribution span a:hover {
+    font-size: 1.5rem;
+
+}
