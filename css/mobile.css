@@ -10,18 +10,60 @@ main {
 }
 
 .card-container {
+    position: relative;
     width: 320px;
     height: auto;
     margin: 0 auto;
     padding: 25px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     border-radius: 15px;
     background-color: var(--dark-blue--card-bg);
+    box-shadow: 10px 9px 16px 1px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 10px 9px 16px 1px rgba(0,0,0,0.46); 
+}
+
+.img-container {
+    position: relative;
+    width: 270px;
+    height: 275px;
+}
+
+.hover-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: var(--cyan-transparent);
+    border-radius: 10px;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.hover-link .eye-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    background-image: url(/images/icon-view.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.hover-link:hover {
+    opacity: 1;
 }
 
 .card-img {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
+    transition: all 500ms ease-in-out;
 }
 
 .card-title {
@@ -29,6 +71,12 @@ main {
     font-size: 2rem;
     font-weight: 400;
     color: var(--just-white);
+    transition: ease-in-out .5s;
+    cursor: pointer;
+}
+
+.card-title:hover {
+    color: var(--cyan);
 }
 
 .card-description {
@@ -114,5 +162,9 @@ main {
 .creator-info a {
     text-decoration: none;
     color: white;
+    transition: ease-in-out .5s;
 }
 
+.creator-info a:hover {
+    color: var(--cyan);
+}
